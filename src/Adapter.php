@@ -10,11 +10,11 @@ class Adapter extends AwsS3Adapter
 	protected $client;
 	protected $bucket;
 
-	public function __construct($key, $secret, $bucket, UploadBuilder $UploadBuilder = null)
+	public function __construct($key, $secret, $bucket, $host, UploadBuilder $UploadBuilder = null)
 	{
 		define('AWS_KEY', $key);
 		define('AWS_SECRET_KEY', $secret);
-		define('HOST', 'https://objects.dreamhost.com');
+		define('HOST', $host);
 
 		$this->bucket = $bucket;
 

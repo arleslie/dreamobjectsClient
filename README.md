@@ -8,9 +8,10 @@ In `config\filesystems.php` add the following under `'disks' => [`
 ```
         'dreamobjects' => [
             'driver' => 'dreamobjects',
-            'key'    => '<key>',
-            'secret' => '<secret>',
-            'bucket' => '<bucket name>'
+            'key'    => env('DREAMO_KEY'),
+            'secret' => env('DREAMO_SECRET'),
+            'bucket' => env('DREAMO_BUCKET'),
+            'host' => env('DREAMO_HOST', 'https://objects-us-west-1.dream.io')
         ],
 ```
 

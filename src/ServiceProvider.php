@@ -14,7 +14,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 			return new FileSystem(new Adapter(
 				$config['key'],
 				$config['secret'],
-				$config['bucket']
+				$config['bucket'],
+				$config['host']
 			));
 		});
 	}
