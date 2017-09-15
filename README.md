@@ -11,7 +11,7 @@ In `config\filesystems.php` add the following under `'disks' => [`
             'key'    => env('DREAMO_KEY'),
             'secret' => env('DREAMO_SECRET'),
             'bucket' => env('DREAMO_BUCKET'),
-            'host' => env('DREAMO_HOST', 'http://objects.dreamhost.com')
+            'host' => env('DREAMO_HOST', 'https://objects-us-west-1.dream.io')
         ],
 ```
 
