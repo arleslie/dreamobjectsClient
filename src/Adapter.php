@@ -14,7 +14,7 @@ class Adapter extends AwsS3Adapter
 	{
 		define('AWS_KEY', $key);
 		define('AWS_SECRET_KEY', $secret);
-		define('HOST', 'https://objects.dreamhost.com');
+		define('HOST', 'https://objects-us-east-1.dream.io');
 
 		$this->bucket = $bucket;
 
